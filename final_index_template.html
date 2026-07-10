@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Parul</title>
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:Georgia,serif;
+background:linear-gradient(180deg,#0b1020,#141b2d,#1b1330);
+color:#f5f5f5;
+overflow-x:hidden;
+}
+body:before{
+content:"";
+position:fixed;inset:0;
+background:
+radial-gradient(circle at 20% 20%,rgba(255,255,255,.25) 1px,transparent 2px),
+radial-gradient(circle at 80% 30%,rgba(255,255,255,.2) 1px,transparent 2px),
+radial-gradient(circle at 50% 80%,rgba(255,255,255,.18) 1px,transparent 2px);
+background-size:180px 180px;
+opacity:.45;
+pointer-events:none;
+}
+.container{max-width:900px;margin:40px auto;padding:24px}
+.hero{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(8px);
+border:1px solid rgba(255,255,255,.12);
+border-radius:24px;
+padding:40px;
+box-shadow:0 20px 60px rgba(0,0,0,.35);
+}
+h1{text-align:center;color:#ffd98e;font-size:44px;margin:0}
+.subtitle{text-align:center;color:#ddd;font-style:italic;margin:16px 0 28px}
+.line{height:1px;background:linear-gradient(90deg,transparent,#d8b56a,transparent);margin:28px 0}
+.card{
+padding:18px 20px;border-radius:16px;margin:18px 0;
+color:#2f2f2f;border:1px solid rgba(0,0,0,.06);
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+transition:.25s ease;
+}
+.card:hover{transform:translateY(-3px)}
+.c1{background:#f7e8ff}.c2{background:#fff7d9}.c3{background:#e8fff0}.c4{background:#ffe8e8}
+.c5{background:#eaf2ff}.c6{background:#fff1e6}.c7{background:#efe9ff}.c8{background:#e9fff8}
+.c9{background:#fff9e9}.c10{background:#fcecff}.c11{background:#edf7ff}.c12{background:#fff0f7}
+p{line-height:1.9;margin:0 0 10px}
+.quote{
+background:#fff9ef;color:#7d5622;border-left:5px solid #d2a357;
+padding:18px;border-radius:12px;text-align:center;font-size:21px;font-style:italic;
+}
+.signature{
+text-align:center;margin-top:40px;color:#f4e5c3;font-size:20px
+}
+.footer{
+background:rgba(255,255,255,.06);
+padding:20px;border-radius:18px;margin-top:20px
+}
+
+
+/* ===== Responsive + Background ===== */
+body{
+    background:
+        linear-gradient(rgba(10,12,25,.72),rgba(10,12,25,.72)),
+        url("background.jpeg") center center / cover fixed no-repeat !important;
+}
+
+.hero{
+    width:100%;
+    max-width:100%;
+}
+
+h1{
+    font-size:clamp(30px,5vw,44px);
+    line-height:1.2;
+    word-break:break-word;
+}
+
+.subtitle{
+    font-size:clamp(15px,2.5vw,18px);
+    line-height:1.7;
+}
+
+h3{
+    font-size:clamp(18px,3vw,26px);
+    line-height:1.5;
+}
+
+p{
+    font-size:clamp(15px,2vw,18px);
+    line-height:1.9;
+    overflow-wrap:anywhere;
+    word-break:break-word;
+    white-space:normal;
+}
+
+.quote{
+    font-size:clamp(18px,3vw,22px);
+    line-height:1.8;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+@media (max-width:768px){
+
+.container{
+    width:95%;
+    margin:10px auto;
+    padding:10px;
+}
+
+.hero{
+    padding:18px;
+    border-radius:18px;
+}
+
+.card{
+    padding:14px;
+    margin:14px 0;
+    border-radius:14px;
+}
+
+.footer{
+    padding:14px;
+}
+
+.signature{
+    font-size:17px;
+    line-height:1.8;
+}
+
+.line{
+    margin:18px 0;
+}
+
+hr{
+    margin:18px 0;
+}
+
+}
+
+
+#intro{
+position:fixed;inset:0;z-index:99999;
+display:flex;flex-direction:column;justify-content:center;align-items:center;
+background:rgba(8,10,20,.96);
+text-align:center;padding:30px;
+transition:opacity .8s ease;
+}
+#intro h1{font-size:clamp(34px,6vw,58px);color:#FFD98E;margin:0 0 18px}
+#intro p{color:#fff;max-width:650px;margin-bottom:24px}
+#openBtn{
+background:#FFD98E;color:#222;border:none;
+padding:16px 34px;border-radius:999px;
+font-size:20px;font-weight:bold;cursor:pointer;
+box-shadow:0 8px 30px rgba(255,217,142,.35);
+transition:.25s;
+}
+#openBtn:hover{transform:scale(1.05)}
+.hero{animation:fadeIn 1.4s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+</style>
+</head>
+<body>
+
+<div id="intro">
+<h1>Happy Birthday ❤️</h1>
+<p>This isn't just a birthday wish.<br>It's a small piece of my heart, written just for you.</p>
+<button id="openBtn">💌 Open My Letter</button>
+</div>
+
+<audio id="music" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+<div class="hero">
+<h1>Happy Birthday, Parul 🤍</h1>
+<div class="subtitle">
+pta h bohot gussa ho, baat bhi nhi krna chahte , puri raat time lga kr apke liye likha h apke liye....<br>
+start here.....please acknowladge on it{ if you receive it}
+</div>
+
+<div class="line"></div>
+
+<div class="card c1"><p>helo Parul,</p></div>
+
+<div class="card c2"><p>I don't know if you expected a message from me today, and honestly,
+I don't know how life has been treating you lately.
+But birthdays have a strange way of bringing old memories back,
+and today, my heart simply wanted to wish you something beautiful.</p></div>
+
+<div class="card c3"><p>Pitchla birthday yaad h , maine apko wishh kiya tha 11:30 pr or tum so gye the or phir 1.30 phir utha diya or phir baate ktm hi nhi hui.
+apne black T-shirt phni hui thi.
+I had imagined silly surprises, long conversations that would make you smile,
+and ending the day by telling you how lucky I felt to have you.
+I know meri hi galti h meri vja se sb hua , but those memories are still incredibly precious to me.</p></div>
+
+<div class="card c4"><p>You'll always be a beautiful chapter of my life
+Not because everything was perfect,
+but because every moment we shared was real.
+-- it is very hard to write this, my keyboard is full from my tears and my hands both are not supporting me ,</p></div>
+
+<div class="card c5"><p>You know...
+You'll always remain a little piece of my heart (( Big part 😢))
+Not in a way that asks anything from you,
+but in a way that quietly thanks life for letting our paths meet.,</p></div>
+
+<div class="quote"><b>
+"Sometimes love isn't about staying together.<br>
+Sometimes it's about praying that the other person smiles,
+even when you're no longer the reason."
+</b></div>
+
+<div class="card c6"><p>If I could ask for one gift today,
+it wouldn't be for us to go back in time.
+It would simply be that every birthday ahead of you is filled with peace,
+good health, laughter,
+and people who love you the way you deserve to be loved.</p></div>
+
+<div class="card c7"><p>Thank you...
+for every smile,
+every late-night conversation,
+every tiny argument that ended with laughter,
+every memory,
+every lesson,
+and every little moment that unknowingly became part of who I am today.,boho yaad aatti h mughe eveyday</p></div>
+
+<div class="card c8"><p>No expectations.
+No complaints.
+No questions.
+Just genuine birthday wishes from someone who once loved you with all his heart,
+and who will always wish the very best for you.</p></div>
+
+<div class="card c9">
+<p><i><b>Sometimes i want back to 2024 and wait for you in hooda market for hours , so that i can see your face for second once in a week,</b></i></p>
+<h3>ITs a secret hahahha 😁😁😁😁</h3>
+<p>and asking 2 girls in library eveyday - Vo ek ladki h yellow dress me aati h vo aayii kya aaj ,
+and apni placement ki prep chod kr , i am finding ways , somehow i can hack camera of liberay
+and can see you in my laptop if you were there ,hahahah, and still no guts ki mai tumse eye contact bhi kr lun ,
+spending my 5 mints break outside your lab { jaha 3 labs hain} kya pta uss 🥸🥸 chsme wali ke sath dikh jaye { teri bhn},
+or pta h ek baar eye contact ho gya , you are sitting outside liberay with you friends { wearing white jjeans and black shoes}
+after a eye contact i have to cross the path , or mere ander himmat nhi hui ki dobara eye contact kr lun , maine park se ghumkr gya ,
+there are many more things but i don't want to tell you,(uhhh)
+have saved eveyphoto of you evey photo or us every beautiful memory that always reminds me how beautiful we were...</p>
+</div>
+
+<div class="footer">
+<div class="card c10"><p>May this new year of your life bring you countless reasons to smile, beautiful surprises,</p></div>
+
+<div class="card c11"><p><b>sorrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrry </b> maine apki uss din dost ko call na kiya hota , maine apki respect nhi ki ,
+or call pr usse putch ki vo kiske sath h or apke uppr sk kiya , vo sb mere andr anxioty ki vjja se hua
+mai khud ko kabhi maaf nhi kr paunga , but mughe apni galti ka ahsaass h ,
+, apko hurt kiya maine , or us din last day call pr bhi ulta sidha bol diya kisi or ki frustation apke uppr nikal di, i cried a lot after that
+mera pyar bohot khrab h , i hate myself , i am a very bad person ,
+<i>
+apne iss nalayakk pgl ladke ko maaf kr denaaa agr ho ske to ...</i>
+gusssa mt ho please itna bura bhi nhi hun, <b>ego prr liya apne mughe pta h</b>,
+mughse ldai krlo bohot sari but esse na yrr, 
+no one can take your place , ( you already know that)
+<hr>
+i am waiting that day we will meet , either for ending eveything or fixing things....
+but i don't want to be in the middle doubting myself with no clearty ..
+hope my dear you understand - please clear things,
+essa mt sotchna ki mai choti ho jaungi agr usse samne se baat kr lunga , apko pta h mai kabhi esssa nhi satchta,
+bus ek baar step hi to lena h phir sb theek ho jayega bsss</p>
+<p><b>Jb itna pyar kiya h mughse ,to merko maaf to de skte ho</b></p></div>
+
+<div class="card c12"><p>chodo in sbko enjoy your birthday bohot sara pyar log aage bdo , bohot bohot
+atche se enjoy krna birthday apna,
+<b>
+Or apka gift palwal aa gya hoga vaha se pick kr lena</b></p>
+
+<p>age jao bohot bohot , I always pray to GOD for you , one day you will so so bigg ,
+and support your father and mother , make them proud ..
+one thing always remeber don't ever go for little , always work hard and
+sbse isolate hokr aapne uppr time spend kro,
+don't ever sit with who are in comfort zone or have no life goals ,
+or sbka garh pr dhyan rakana byyy</p>
+
+<hr>
+<p><i>Happy Birthday once again little little princess ❤️
+Meri mmi putcha tha usse kya gift doge or main kutch bol nhi paya </i>,
+i have seleted a very beautiful gift for you ,
+bohot atcha lgega apko ,
+hope aap tk phohoch jaye ,
+accept kr lena nhi to bohot pitoge,
+nhi kiya to kalesh krdunga,</p>
+
+<hr>
+<p>And yes...
+My little heart,
+I still hope life protects your smile.
+I hope your dreams become reality.
+I hope the people around you always remind you how kind,
+beautiful and strong you truly are. and eveyone love you...</p>
+
+<p>maine apki hr ek choti se choti chizz ko smbhaal kr rakh rakha h ,</p>
+</div>
+
+<div class="signature">
+if you dream make sure you dream big...<br>
+Your Pagal ladka,<br><br>
+my keyboard is wet and figers are not supporting me while writing this,
+<br>
+My eyes still search for you in places where my heart remembers you.
+<br>
+Thanks for eveything ❤️❤️
+</div>
+
+</div>
+
+</div>
+</div>
+
+<script>
+const btn=document.getElementById('openBtn');
+const intro=document.getElementById('intro');
+const music=document.getElementById('music');
+btn.addEventListener('click',async()=>{
+ try{
+   music.volume=0.2;
+   await music.play();
+ }catch(e){}
+ intro.style.opacity='0';
+ setTimeout(()=>intro.remove(),800);
+});
+</script>
+</body>
+</html>
